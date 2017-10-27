@@ -7,3 +7,5 @@
 | quotes_spider | Scrapy at a glance 示例代码 |
 | tutorial | Scrapy Tutorial 示例代码 |
 | quotesbot | Examples 示例代码 |
+| blog | 使用 css 和 xpath 来爬取我的博客的实验代码 |
+
