@@ -7,4 +7,3 @@
 | quotes_spider | Scrapy at a glance 示例代码 |
 | tutorial | Scrapy Tutorial 示例代码 |
 | quotesbot | Examples 示例代码 |
-| crawl_my_blog | 爬取本人 CSND 实验代码 | 
