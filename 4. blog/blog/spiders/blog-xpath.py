@@ -17,6 +17,8 @@ class BlogSpiderXPath(scrapy.Spider):
                 'comment': article.xpath('.//span[@class="link_comments"]/text()'
                                          ).extract_first().replace('(', '').replace(')', '').strip()
             }
-            next_page = response.xpath('//*[@id="papelist"]/a[6]/@href').extract_first()
+            next_page = response.xpath('//*[@id="papelist"]/a[last() - 1]/@href'
+                                       ).extract_first()
+            print('This is %s' % next_page)
             if next_page is not None:
                 yield scrapy.Request(response.urljoin(next_page))
